@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author      Rizki Pratama @ciptaloka.com
+ * @copyright   Copyright (c) 2017 Ciptaloka (http://ciptaloka.com)
+ * @package     Ciptaloka_HelloWorld
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<css src="Ciptaloka_HelloWorld/css/hello.css"/>
+	</head>
+	<body>
+		<referenceContainer name="product.info.main">
+			<!-- Giving the HelloWorld block a name "ciptaloka_helloworld.helloworld" -->
+			<!-- so it can be referenced on another block easily. -->
+			<block name="ciptaloka_helloworld.helloworld" class="Ciptaloka\HelloWorld\Block\Catalog\Product\HelloWorld" before="-" template="product/hello.phtml"/>
+		</referenceContainer>
+	</body>
+</page>

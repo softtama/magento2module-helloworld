@@ -1,0 +1,13 @@
+/**
+ * @author      Rizki Pratama
+ * @copyright   Copyright (c) 2017 http://blog.whoisrizkipratama.net
+ * @package     Ciptaloka_HelloWorld
+ */
+.ciptaloka-helloworld-block {
+    clear: both;
+    float: none;
+}
+
+.ciptaloka-helloworld-block ul li {
+    text-align: left;
+}
