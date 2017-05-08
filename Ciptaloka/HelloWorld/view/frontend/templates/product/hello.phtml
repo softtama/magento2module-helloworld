@@ -9,5 +9,14 @@
 ?>
 <div class="ciptaloka-helloworld-block" style="text-align: <?= $this->getTextAlign(); ?>;">
     <p><?= $this->getHelloWorldTxt() . " - <b>" . $this->getBlockLabel() . "</b>"; ?></p>
-    <code><?php print_r($this->getCollection()); ?></code>
+    <ul>
+        <?php foreach ($this->getCollection() as $item) { ?>
+        <li>
+            <small>
+                <b><?= $item->getLabel(); ?></b>:
+                <?= $item->getValue(); ?>
+            </small>
+        </li>
+        <?php } ?>
+    </ul>
 </div>
